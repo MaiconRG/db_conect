@@ -19,11 +19,14 @@ const connectToDatabase = async () => {
 };
 
 // Schema e modelo do MongoDB
-const confirmationSchema = new mongoose.Schema({
-  name: { type: String, required: true },
-  confirmation: { type: String, required: true },
-  createdAt: { type: Date, default: Date.now },
-});
+const confirmationSchema = new mongoose.Schema(
+  {
+    name: { type: String, required: true },
+    confirmation: { type: String, required: true },
+    createdAt: { type: Date, default: Date.now },
+  },
+  { collection: "respostas_confirm" } // <-- nome da coleção
+);
 
 const Confirmation =
   mongoose.models.Confirmation ||

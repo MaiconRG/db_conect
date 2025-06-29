@@ -5,8 +5,5 @@
       "src": "server.js",
       "use": "@vercel/node"
     }
-  ],
-  "env": {
-    "MONGO_URI": "@mongo_uri"
-  }
+  ]
 }

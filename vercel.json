@@ -5,5 +5,11 @@
       "src": "server.js",
       "use": "@vercel/node"
     }
+  ],
+  "routes": [
+    {
+      "src": "/api/save-confirmation",
+      "dest": "/api/save-confirmation.js"
+    }
   ]
 }

@@ -1,15 +1,3 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "server.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/save-confirmation",
-      "dest": "/api/save-confirmation.js"
-    }
-  ]
+  "version": 2
 }
